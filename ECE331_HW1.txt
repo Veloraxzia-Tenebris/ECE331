@@ -1,0 +1,4 @@
+Output:
+	Number of comparisons for worst case: 120
+	Number of comparisons for best case: 15
+	Average number of comparisons for 100 permutations: 70.69

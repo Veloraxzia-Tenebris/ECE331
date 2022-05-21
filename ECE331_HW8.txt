@@ -1,0 +1,8 @@
+// Sonny Ji
+// ECE331
+// Homework #8
+// Problem(s): 1
+
+Output:
+	For one run, there are 17 elements in list 2 and 11 elements in list 3.
+	On average, there are 9.88 elements in list 2 and 9.67 elements in list 3.

@@ -1,0 +1,39 @@
+// Sonny Ji
+// ECE331
+// Homework #3
+// Problem(s): 1
+
+maximum_subarray(Array, Length) {
+	Accumulator = 0
+	Sum = 0
+	Starting_Index = 0
+	Ending_Index = 0
+	for i from 0 to Length {
+		Accumulator = 0
+		for j from i to Length {
+			Accumulator += A[j]
+			if Accumulator > Sum {
+				Sum = Accumulator
+				Starting_Index = i
+				Ending_Index = j
+			}
+		}
+	}
+	return Sum, Starting_Index, and Ending_Index
+}
+
+This function takes in an array and its length and returns the maximum subarray, as well as the starting and ending indices.
+Accumulator is the accumulated sum for every j loop. If the current j loop's sum is greater than the previous maximum, the maximum is changed to the greater one, and the indices are saved.
+This simply loops through the entire array by choosing a starting index (i loop), starting at 0 and going till the end, and then summing everything after that (j loop), one by one.
+Once the j loop finishes, the i loop moves forwards by one and re-sums everything.
+Eventually, it will have summed through the entire array and return the maximum sum.
+
+As an example, take the array {5, -3, 2, 6, -2}:
+	On the first loop, the accumulator is set to 5, 2, 4, 10, 8 as it sums through the array.
+		10 and its indices are kept as the maximum.
+	On the second loop, the accumulator is set to -3, -1, 5, 3.
+	Third: 2, 8, 6
+	Fourth: 6, 4
+	Fifth: -2
+Thus, since 10 is the maximum subarray sum, the function would return:
+	Sum = 10, Starting_Index = 0, Ending_Index = 4

@@ -1,0 +1,13 @@
+// Sonny Ji
+// ECE331
+// Homework #10
+// Problem(s): 1, 2
+
+Output:
+	The average height of a BST with 4 elements is 3.46, which is about 3.33...
+	The average height of a BST with 16 elements is 10.02.
+
+Comments:
+	This is the exact actual output of my code.
+	There are a few commented out bits that show more in-depth testing.
+	There's also functions to print the arrays, BST in-line, and even one that makes a 2D diagram.
